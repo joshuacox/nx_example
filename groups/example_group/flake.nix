@@ -25,6 +25,12 @@
           ../../nix/server.nix
           ../../nix/system.nix
           ../../nix/zsh.nix
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.user1 = import ../../users/user1/home.nix;
+          }
         ];
       };
       pihost1 = { pkgs, name, nodes, ... }: {
