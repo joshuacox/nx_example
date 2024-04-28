@@ -55,6 +55,7 @@ in
     powertop
     pv
     pyenv
+    rsync
     sops
     ssh-to-age
     ssh-to-pgp
