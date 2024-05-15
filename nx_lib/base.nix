@@ -1,0 +1,72 @@
+{ config, lib, pkgs, ... }:
+let
+in
+{
+  environment.systemPackages = with pkgs; [ 
+    age
+    aria
+    atool
+    bat
+    blahaj
+    byobu
+    #bumblebee
+    cowsay
+    cryptsetup
+    curl
+    dconf
+    dejavu_fonts
+    dig
+    direnv
+    eza
+    file
+    ffmpeg
+    fortune
+    git
+    git-crypt
+    glow
+    gnupg
+    hack-font
+    home-manager
+    htop
+    httpie
+    iotop
+    iftop
+    keychain
+    kakoune
+    kak-lsp
+    k3s
+    linuxPackages.cpupower
+    lolcat
+    lshw
+    mtr
+    nano
+    ncdu
+    nfs-utils
+    libnfs
+    niv
+    nixos-generators
+    nixos-icons
+    nmap
+    nushell
+    perlPackages.AppClusterSSH
+    ponysay
+    powertop
+    pv
+    rsync
+    rclone
+    sops
+    ssh-to-age
+    ssh-to-pgp
+    starship
+    syncrclone
+    tealdeer
+    tmux
+    tmuxinator
+    tree
+    unzip
+    wget
+    wireguard-tools
+    yadm
+    zip
+  ];
+}

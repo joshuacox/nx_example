@@ -10,6 +10,7 @@ in
   };
   environment.systemPackages = with pkgs; [ 
     nvidia-docker
+    nvtop
   ];
   hardware = {
   # Enable OpenGL

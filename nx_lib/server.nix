@@ -5,14 +5,6 @@ in
 {
   users.users.root.hashedPassword = "!";
 
-  environment.systemPackages = with pkgs; [
-    curl
-    git
-    gnupg
-    vim
-    wget
-  ];
-
   services.avahi = {
     enable = true;
     nssmdns = true;

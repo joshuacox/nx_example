@@ -15,5 +15,6 @@ in
     vkBasalt
     mangohud
     goverlay
+    tinyfugue
   ];
 }

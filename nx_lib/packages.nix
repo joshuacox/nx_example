@@ -2,72 +2,21 @@
 let
 in
 {
+  environment.variables = {
+    PKG_CONFIG_PATH="${pkgs.openssl.dev}/lib/pkgconfig";
+  };
   environment.systemPackages = with pkgs; [ 
+    ansible
     automatic-timezoned
-    age
-    aria
-    atool
-    bat
-    byobu
-    #bumblebee
     colmena
-    cowsay
-    curl
-    dconf
-    dejavu_fonts
     docker
-    dig
-    direnv
-    dorion
-    eza
-    file
-    ffmpeg
-    fortune
-    git
-    git-crypt
-    glow
-    gnupg
-    hack-font
-    home-manager
-    htop
-    httpie
-    iotop
-    iftop
-    keychain
-    kakoune
-    kak-lsp
-    k3s
-    linuxPackages.cpupower
-    lolcat
-    lshw
-    mtr
-    nano
-    neomutt
-    ncdu
-    niv
-    nixos-generators
-    nixos-icons
-    nmap
-    nushell
-    ollama
-    perlPackages.AppClusterSSH
-    ponysay
-    powertop
-    pv
+    parted
+    pkg-config
     pyenv
-    rsync
-    sops
-    ssh-to-age
-    ssh-to-pgp
-    starship
-    tealdeer
-    tmux
-    tmuxinator
-    unzip
-    wget
+    rainbowstream
+    ruby
+    rustup
     wego
-    wireguard-tools
-    yadm
-    zip
+    whois
   ];
 }

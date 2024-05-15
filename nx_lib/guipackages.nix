@@ -3,18 +3,34 @@ let
 in
 {
   environment.systemPackages = with pkgs; [ 
+    appimage-run
     alacritty
     blender
-    #bumblebee
-    dorion
+    dfeet
+    distrobox
+    discord
     gnumeric
+    feh
+    foot
     gimp
     inkscape
+    kdenlive
+    krdc
     libreoffice-qt
+    libsixel
+    maim
     mplayer
+    mpv
+    pandoc
+    pavucontrol
+    persepolis
     pidgin-with-plugins
     pinentry-qt
-    persepolis
+    pkgs.xorg.xev
+    pkgs.xorg.xhost
+    pkgs.xorg.xmodmap
+    rclone-browser
+    remmina
     signal-desktop
     slack-dark
     telegram-desktop
@@ -23,5 +39,8 @@ in
     virt-manager
     vlc
     vscodium-fhs
+    xdg-desktop-portal-wlr
+    xclip
+    xsane
   ];
 }
