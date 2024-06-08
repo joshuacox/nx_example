@@ -2,23 +2,29 @@
 let
 in
 {
+  hardware = {
+    sane.enable = true;
+  };
   environment.systemPackages = with pkgs; [ 
     appimage-run
     alacritty
     blender
-    dfeet
+    d-spy
     distrobox
     discord
     gnumeric
+    gparted
     feh
     foot
     gimp
     inkscape
     kdenlive
+    kdiff3
     krdc
     libreoffice-qt
     libsixel
     maim
+    mesa-demos
     mplayer
     mpv
     pandoc

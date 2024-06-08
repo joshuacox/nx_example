@@ -2,21 +2,90 @@
 let
 in
 {
+  programs.zsh.enable = true;
+  programs.lazygit.enable = true;
+  programs.git.enable = true;
+  programs.autojump.enable = true;
   environment.variables = {
     PKG_CONFIG_PATH="${pkgs.openssl.dev}/lib/pkgconfig";
   };
   environment.systemPackages = with pkgs; [ 
+    asdf
     ansible
     automatic-timezoned
+    autojump
+    bat
+    bat-extras.batdiff
+    bat-extras.batgrep
+    bat-extras.batpipe
+    bat-extras.batwatch
+    bat-extras.prettybat
+    bfg-repo-cleaner
+    bottom
+    brightnessctl
+    btop
+    comma
+    deco
+    dig
+    eww
+    eza
+    feh
+    file
+    ffmpeg
+    git
+    gh
+    hack-font
+    htop
+    inshellisense
+    kakoune
+    kak-lsp
+    lazygit
+    magic-wormhole
+    maim
+    manix
+    mkcert
+    mtr
+    neofetch
+    nixos-generators
+    nix-index
+    oh-my-zsh
+    pass
+    picom
+    playerctl
+    powertop
+    ripgrep
+    sharutils
+    tint2
+    thefuck
+    tlrc
+    tree
+    unclutter
+    whois
+    wtf
+    xxd
+    btop
     colmena
     docker
+    fd
+    fzf
+    joshuto
+    jq
+    lazygit
+    openfortivpn
+    parallel
     parted
     pkg-config
     pyenv
     rainbowstream
+    rlwrap
     ruby
     rustup
+    todo-txt-cli
+    trash-cli
+    usbutils
     wego
     whois
+    yt-dlp
+    zoxide
   ];
 }

@@ -6,10 +6,11 @@ in
     age
     aria
     atool
+    bc
     bat
+    btop
     blahaj
     byobu
-    #bumblebee
     cowsay
     cryptsetup
     curl
@@ -19,22 +20,19 @@ in
     direnv
     eza
     file
-    ffmpeg
     fortune
     git
     git-crypt
     glow
     gnupg
-    hack-font
+    gnumake
     home-manager
     htop
     httpie
     iotop
     iftop
+    jq
     keychain
-    kakoune
-    kak-lsp
-    k3s
     linuxPackages.cpupower
     lolcat
     lshw
@@ -44,19 +42,19 @@ in
     nfs-utils
     libnfs
     niv
-    nixos-generators
     nixos-icons
     nmap
     nushell
     perlPackages.AppClusterSSH
     ponysay
-    powertop
     pv
+    pwgen
     rsync
     rclone
     sops
     ssh-to-age
     ssh-to-pgp
+    smartmontools
     starship
     syncrclone
     tealdeer
@@ -67,6 +65,7 @@ in
     wget
     wireguard-tools
     yadm
+    yq
     zip
   ];
 }

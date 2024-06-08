@@ -9,11 +9,11 @@ with lib;
     gnupg.agent = {
       enable = true;
       enableSSHSupport = true;
-      pinentryFlavor = "qt";
     };
   };
   environment.systemPackages = [
     gnupg
+    openssl
     yubikey-personalization
     pinentry-qt
   ];

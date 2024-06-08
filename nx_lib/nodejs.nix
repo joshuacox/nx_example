@@ -3,12 +3,8 @@ let
 in
 {
   environment.systemPackages = with pkgs; [ 
-    weechat
-    irssi
-    neomutt
-    t
-    turses
-    rainbowstream
-    twspace-crawler
+    nodejs
+    yarn
+    yarn2nix
   ];
 }
