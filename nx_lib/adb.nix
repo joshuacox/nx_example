@@ -3,9 +3,8 @@ let
 in
 {
   environment.systemPackages = with pkgs; [ 
-    nodejs
-    yarn
-    yarn2nix
-    node2nix
+    android-tools
+    scrcpy
   ];
+  programs.adb.enable = true;
 }

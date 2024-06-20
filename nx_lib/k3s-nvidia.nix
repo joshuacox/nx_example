@@ -3,9 +3,9 @@
 let
 in
 {
-  virtualisation.docker = {
-    enable = true;
-    enableNvidia = true;
-  };
-  environment.systemPackages = with pkgs; [ docker runc ];
+  imports =
+    [
+      ./k3s.nix
+    ];
+  hardware.nvidia-container-toolkit.enable = true;
 }

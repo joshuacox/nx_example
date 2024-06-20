@@ -6,20 +6,30 @@ in
     sane.enable = true;
   };
   environment.systemPackages = with pkgs; [ 
+    ags
     appimage-run
     alacritty
     blender
+    bspwm
+    calibre
+    conky
     d-spy
     distrobox
     discord
-    gnumeric
-    gparted
+    dmenu
+    eww
     feh
     foot
+    gnumeric
+    gnome.mutter
+    gparted
     gimp
+    #gnome
+    #hyprland
     inkscape
     kdenlive
     kdiff3
+    kitty
     krdc
     libreoffice-qt
     libsixel
@@ -35,18 +45,33 @@ in
     pkgs.xorg.xev
     pkgs.xorg.xhost
     pkgs.xorg.xmodmap
+    qtcreator
+    qt6.full
+    #plasma-desktop
     rclone-browser
     remmina
+    river
     signal-desktop
     slack-dark
+    streamlink
+    streamlink-twitch-gui-bin
+    sway
     telegram-desktop
     terminator
     tilda
     virt-manager
     vlc
     vscodium-fhs
+    wezterm
+    wofi
+    xdg-desktop-portal-gnome
+#xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
+    xdg-desktop-portal-kde
     xdg-desktop-portal-wlr
     xclip
     xsane
+    xorg.xinit
+    yakuake
   ];
 }

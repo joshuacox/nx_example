@@ -14,19 +14,30 @@ in
     cowsay
     cryptsetup
     curl
+    curlie
     dconf
     dejavu_fonts
     dig
+    dog
+    dogdns
     direnv
+    duf
+    dust
     eza
     file
     fortune
+    fzf
+    lsof
+    mcfly
+    mcfly-fzf
     git
     git-crypt
+    glances
     glow
     gnupg
     gnumake
     home-manager
+    gtop
     htop
     httpie
     iotop
@@ -36,19 +47,23 @@ in
     linuxPackages.cpupower
     lolcat
     lshw
+    mc
+    mise
     mtr
     nano
     ncdu
     nfs-utils
     libnfs
+    mprocs
     niv
     nixos-icons
-    nmap
     nushell
     perlPackages.AppClusterSSH
     ponysay
+    procs
     pv
     pwgen
+    restic
     rsync
     rclone
     sops
@@ -61,6 +76,7 @@ in
     tmux
     tmuxinator
     tree
+    unison
     unzip
     wget
     wireguard-tools

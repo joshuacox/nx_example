@@ -1,6 +1,5 @@
 { config, lib, pkgs, inputs, ... }:
 let
-    clip.url = "github:joshuacox/clip";
 in
 {
   programs.ccache.enable = true;

@@ -2,10 +2,8 @@
 let
 in
 {
+  virtualisation.waydroid.enable = true;
   environment.systemPackages = with pkgs; [ 
-    nodejs
-    yarn
-    yarn2nix
-    node2nix
+    waydroid
   ];
 }

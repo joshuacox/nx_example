@@ -5,16 +5,9 @@ in
   environment.pathsToLink = [ "/libexec" ]; # links /libexec from derivations to /run/current-system/sw 
   services.xserver = {
     enable = true;
-
     desktopManager = {
       xterm.enable = false;
     };
-   
-    displayManager = {
-      gdm.enable = true;
-      defaultSession = "none+i3";
-    };
-
     windowManager.i3 = {
       enable = true;
       extraPackages = with pkgs; [
@@ -24,5 +17,9 @@ in
         i3blocks #if you are planning on using i3blocks over i3status
      ];
     };
+#    displayManager = {
+#      gdm.enable = true;
+#      defaultSession = "none+i3";
+#    };
   };
 }

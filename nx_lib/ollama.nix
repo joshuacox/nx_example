@@ -10,7 +10,7 @@ in
 {
   services = {
     ollama = {
-      enable = true;
+      enable = lib.mkDefault true;
       acceleration = "cuda";
     };
   };

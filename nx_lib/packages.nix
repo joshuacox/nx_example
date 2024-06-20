@@ -10,6 +10,17 @@ in
     PKG_CONFIG_PATH="${pkgs.openssl.dev}/lib/pkgconfig";
   };
   environment.systemPackages = with pkgs; [ 
+    docker_25
+    python312Packages.python-lsp-server
+    oil
+    dash
+    elvish
+    fish
+    ksh
+    xonsh
+    starship
+    carapace
+    ascii-draw
     asdf
     ansible
     automatic-timezoned
@@ -23,31 +34,54 @@ in
     bfg-repo-cleaner
     bottom
     brightnessctl
+    broot
     btop
+    cheat
+    cht-sh
+    clang-tools
+    cmake
+    code-minimap
+    codespell
+    conan
+    cppcheck
+    doxygen
+    gcc
+    gdb
+    gtest
+    lcov
     comma
     deco
     dig
+    doge
     eww
     eza
     feh
     file
     ffmpeg
-    git
     gh
+    gping
     hack-font
-    htop
+    helix
+    helix-gpt
+    hyperfine
     inshellisense
+    jekyll
+    jmeter
     kakoune
     kak-lsp
     lazygit
+    lemmeknow
+    lunarvim
     magic-wormhole
     maim
     manix
     mkcert
     mtr
     neofetch
+    neovim
     nixos-generators
     nix-index
+    nmap
     oh-my-zsh
     pass
     picom
@@ -55,6 +89,7 @@ in
     powertop
     ripgrep
     sharutils
+    siege
     tint2
     thefuck
     tlrc
@@ -65,7 +100,6 @@ in
     xxd
     btop
     colmena
-    docker
     fd
     fzf
     joshuto
@@ -75,14 +109,21 @@ in
     parallel
     parted
     pkg-config
+    platinum-searcher
     pyenv
     rainbowstream
     rlwrap
     ruby
     rustup
+    silver-searcher
+    silver-platter
+    silverbullet
     todo-txt-cli
     trash-cli
     usbutils
+    vcpkg
+    vcpkg-tool
+    vim
     wego
     whois
     yt-dlp

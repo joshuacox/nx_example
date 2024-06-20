@@ -2,10 +2,10 @@
 let
 in
 {
+  imports = [
+      ./desktop.nix
+  ];
   environment.systemPackages = with pkgs; [ 
-    nodejs
-    yarn
-    yarn2nix
-    node2nix
+    powertop
   ];
 }

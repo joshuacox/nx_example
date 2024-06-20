@@ -9,10 +9,17 @@ in
     };
   };
   environment.systemPackages = with pkgs; [ 
-    nvidia-docker
     nvtopPackages.full
   ];
+  services = {
+    xserver = {
+      videoDrivers = [ "nvidia" ];
+    };
+  };
+
+  boot.kernelParams = [ "nvidia.NVreg_PreserveVideoMemoryAllocations=1" ];
   hardware = {
+    nvidia-container-toolkit.enable = true;
   # Enable OpenGL
     opengl = {
       enable = lib.mkDefault true;
@@ -50,7 +57,10 @@ in
       # Optionally, you may need to select the appropriate driver version for your specific GPU.
       #hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.production;
       #package = config.boot.kernelPackages.nvidiaPackages.stable;
-      package = lib.mkDefault config.boot.kernelPackages.nvidiaPackages.production;
+      #package = lib.mkDefault config.boot.kernelPackages.nvidiaPackages.production;
+      #package = lib.mkDefault config.boot.kernelPackages.nvidiaPackages.stable;
+      #package = lib.mkDefault config.boot.kernelPackages.nvidiaPackages.beta;
+      package =  config.boot.kernelPackages.nvidiaPackages.production;
     };
   };
 }

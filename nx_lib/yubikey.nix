@@ -6,15 +6,14 @@ with lib;
   services.udev.packages = [ yubikey-personalization ];
   programs = {
     ssh.startAgent = false;
-    gnupg.agent = {
-      enable = true;
-      enableSSHSupport = true;
-    };
   };
   environment.systemPackages = [
     gnupg
     openssl
     yubikey-personalization
+    yubioath-flutter
+    yubico-pam
+    yubico-piv-tool
     pinentry-qt
   ];
 }

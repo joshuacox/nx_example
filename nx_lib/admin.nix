@@ -14,6 +14,7 @@ in
     gotop
     htop
     iftop
+    killall
     ncdu
     nmon
     sysstat

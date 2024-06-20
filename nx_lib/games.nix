@@ -17,5 +17,6 @@ in
     steamcmd
     tinyfugue
     vkBasalt
+    yquake2-all-games
   ];
 }

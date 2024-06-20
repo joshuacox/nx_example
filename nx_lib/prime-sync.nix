@@ -2,21 +2,10 @@
 let
 in
 {
-  programs.steam.package = pkgs.steam.override {
-     withPrimus = true;
-     extraPkgs = pkgs: [ bumblebee glxinfo ];
-  };
-  hardware = {
-    nvidia = {
-      powerManagement.finegrained = lib.mkDefault true;
-      prime = {
-	offload = {
-	  enable = lib.mkForce false;
-	  enableOffloadCmd = lib.mkForce false;
-	};
-	# sync should not be enabled with offload at the same time
-	sync.enable = lib.mkForce true;
-      };
+  specialisation = {
+    nvidia-sync.configuration = {
+      system.nixos.tags = [ "nvidia-sync" ];
+      hardware.nvidia.powerManagement.finegrained = lib.mkDefault false;
     };
   };
 }
